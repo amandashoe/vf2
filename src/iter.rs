@@ -56,7 +56,7 @@ where
     }
 }
 
-impl<'a, Query, Data, NodeEq, EdgeEq> Iterator for IsomorphismIter<'a, Query, Data, NodeEq, EdgeEq>
+impl<Query, Data, NodeEq, EdgeEq> Iterator for IsomorphismIter<'_, Query, Data, NodeEq, EdgeEq>
 where
     Query: Graph,
     Data: Graph,
